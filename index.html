@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LIBERA | Gentle Relief</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              libera: {
+                // Primary
+                rose: '#FF5E95', // Rose Pink - Energetic, feminine
+                orchid: '#A15CFF', // Purple Orchid - High trust
+                coral: '#FF876F', // Coral Peach - Modern, interactive
+                
+                // Secondary
+                lilac: '#E6CCFF', // Pastel Lilac - Soft UI
+                mint: '#B9F3E4', // Mint Green - Calming
+                cream: '#FFF9F4', // Soft Cream - Minimal UI
+                
+                // Neutrals
+                charcoal: '#33333D', // Deep Charcoal
+                beige: '#F2E3DC', // Rose Beige
+                ivory: '#FFFFFF', // Ivory White
+                
+                // Mappings for existing code compatibility
+                pink: '#FF5E95', 
+                teal: '#B9F3E4',
+                tealDark: '#008080', // Computed dark teal for text
+                offWhite: '#FFF9F4',
+                darkBg: '#1C1917', 
+                darkCard: '#292524',
+              }
+            },
+            fontFamily: {
+              sans: ['Outfit', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            animation: {
+              'marquee': 'marquee 25s linear infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'spin-slow': 'spin 20s linear infinite',
+            },
+            keyframes: {
+              marquee: {
+                '0%': { transform: 'translateX(0%)' },
+                '100%': { transform: 'translateX(-100%)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      canvas {
+        outline: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "lucide-react": "https://esm.sh/lucide-react@0.344.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3",
+    "framer-motion": "https://esm.sh/framer-motion@11.0.8",
+    "motion/react": "https://esm.sh/framer-motion@11.0.8",
+    "three": "https://esm.sh/three@0.162.0",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@8.15.19",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@9.102.6",
+    "ogl": "https://esm.sh/ogl@1.0.11",
+    "three/examples/jsm/loaders/OBJLoader": "https://esm.sh/three@0.162.0/examples/jsm/loaders/OBJLoader.js",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body class="bg-libera-cream text-libera-charcoal dark:bg-libera-darkBg dark:text-libera-ivory transition-colors duration-300">
+    <div id="root"></div>
+  </body>
+</html>
